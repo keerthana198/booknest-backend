@@ -14,7 +14,7 @@ async function bootstrap() {
         transform: true,
     }));
     app.setGlobalPrefix('api');
-    const port = process.env.PORT || 3001;
+    const port = process.env.PORT;
     await app.listen(port);
     console.log(`🚀 BookNest backend running on http://localhost:${port}/api`);
 }
