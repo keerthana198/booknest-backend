@@ -6,7 +6,7 @@ declare class RegisterDto {
     password: string;
 }
 declare class LoginDto {
-    email: string;
+    name: string;
     password: string;
 }
 export declare class AuthController {

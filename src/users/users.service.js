@@ -33,6 +33,9 @@ let UsersService = class UsersService {
     async findByEmail(email) {
         return this.userModel.findOne({ email }).exec();
     }
+    async findByName(name) {
+        return this.userModel.findOne({ name }).exec();
+    }
     async findById(id) {
         return this.userModel.findById(id).select('-password').exec();
     }

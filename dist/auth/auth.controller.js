@@ -36,9 +36,9 @@ __decorate([
 class LoginDto {
 }
 __decorate([
-    (0, class_validator_1.IsEmail)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
-], LoginDto.prototype, "email", void 0);
+], LoginDto.prototype, "name", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
@@ -52,7 +52,7 @@ let AuthController = class AuthController {
         return this.authService.register(dto.name, dto.email, dto.password);
     }
     login(dto) {
-        return this.authService.login(dto.email, dto.password);
+        return this.authService.login(dto.name, dto.password);
     }
     getMe(req) {
         return this.usersService.findById(req.user.userId);

@@ -12,7 +12,7 @@ export declare class AuthService {
             email: string;
         };
     }>;
-    login(email: string, password: string): Promise<{
+    login(name: string, password: string): Promise<{
         access_token: string;
         user: {
             id: import("mongoose").Types.ObjectId;

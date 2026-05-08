@@ -6,5 +6,6 @@ export declare class UsersService {
     create(name: string, email: string, password: string): Promise<User>;
     findByEmail(email: string): Promise<UserDocument | null>;
     findById(id: string): Promise<User | null>;
+    findByName(name: string): Promise<UserDocument | null>;
     getTopReviewers(): Promise<User[]>;
 }
