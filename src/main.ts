@@ -22,7 +22,7 @@ async function bootstrap() {
   // Global prefix
   app.setGlobalPrefix('api');
 
-  const port = 3000;
+  const port =  process.env.PORT || 3000;
   await app.listen(port);
   console.log(`🚀 BookNest backend running on http://localhost:${port}/api`);
 }
