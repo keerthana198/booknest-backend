@@ -7,7 +7,7 @@ async function bootstrap() {
 
   // Enable CORS for React frontend
   app.enableCors({
-    origin: 'book-nest-frontend-8lfa17jh6-keerthana198s-projects.vercel.app',
+    origin:"*",
     credentials: true,
   });
 
